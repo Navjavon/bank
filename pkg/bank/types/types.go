@@ -4,11 +4,11 @@ package types
 type Money int64
 
 // Categoty represents the category in which the payment was made (cars, pharmacies, restaurants, etc.).
-type Categoty string
+type Category string
 
 // Payment presents information about the payment.
 type Payment struct {
 	ID       int
 	Amount   Money
-	Categoty Categoty
+	Category Category
 }
