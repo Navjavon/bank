@@ -11,7 +11,6 @@ const (
 	TJS Currency = "TJS"
 	RUB Currency = "RUB"
 	USD Currency = "USD"
-	EUR Currency = "EUR"
 )
 
 // PAN presents number of card.
@@ -27,4 +26,17 @@ type Card struct {
 	Color    string
 	Name     string
 	Active   bool
+}
+
+// Payment presents information about the payment.
+type Payment struct {
+	ID int
+	Amount Money
+}
+
+// PaymentSource presents source of payments.
+type PaymentSource struct {
+	Type string
+	Number string
+	Balance Money
 }
